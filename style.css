@@ -5,14 +5,11 @@
     height: 300px;
     resize: none;
     font-size: 24px;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-}
-
-.input-field:focus {
-    background: #d1d1d1;
 }
 
 .keys-wrapper {
+    display: flex;
+    flex-flow: row wrap;
     width: 1350px;
     height: 450px;
     border: 3px solid black;
@@ -23,7 +20,6 @@
 }
 
 .keys-wrapper > div {
-    display: inline-block;
     margin: 5px;
     border-radius: 5px;
 }
@@ -35,7 +31,7 @@
 }
 
 .keys:hover {
-    background-color: green;
+    cursor: pointer;
 }
 
 .keys:active {
@@ -62,6 +58,10 @@
       transform: translate3d(5px, 0, 0);
     }
   }
+
+.highlight {
+    background-color: chartreuse;
+}
 
 .keys:nth-child(14) {
     width: 170px;
@@ -145,4 +145,42 @@
     text-align: center;
     margin: 0;
     font-weight: bold;
+}
+
+.inner-text {
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.caps-lock {
+    text-transform: uppercase;
+}
+
+.shift {
+    text-transform: uppercase;
+}
+
+.evaluation-button {
+    padding-top: 30px;
+    cursor: pointer;
+    width: 250px;
+    height: 100px;
+    background-color: gray;
+    border: 3px solid black;
+    border-radius: 5px;
+    position: relative;
+    bottom: 330px;
+}
+
+.selected {
+    background-color: green;
+}
+
+.body {
+    text-align: center;
+    user-select: none;
+    width: 1920px;
+    height: 100%;
+    margin: 20px auto 0 auto;
 }
