@@ -1,4 +1,3 @@
-
 let russianBoard = {
     0: 'ё',
     1: '1',
@@ -13,8 +12,8 @@ let russianBoard = {
     10: '0',
     11: '-',
     12: '=',
-    13: 'Backspace',
-    14: 'Tab',
+    13: 'backspace',
+    14: 'tab',
     15: 'й',
     16: 'ц',
     17: 'у',
@@ -28,8 +27,8 @@ let russianBoard = {
     25: 'х',
     26: 'ъ',
     27: '\\',
-    28: 'Del',
-    29: 'Caps Lock',
+    28: 'del',
+    29: 'caps lock',
     30: 'ф',
     31: 'ы',
     32: 'в',
@@ -41,8 +40,8 @@ let russianBoard = {
     38: 'д',
     39: 'ж',
     40: 'э',
-    41: 'Enter',
-    42: 'Shift',
+    41: 'enter',
+    42: 'shift',
     43: '\\',
     44: 'я',
     45: 'ч',
@@ -55,13 +54,13 @@ let russianBoard = {
     52: 'ю',
     53: '/',
     54: '⇑',
-    55: 'Shift',
-    56: 'Ctrl',
-    57: 'Win',
-    58: 'Alt',
-    59: '',
-    60: 'Alt',
-    61: 'Ctrl',
+    55: 'shift',
+    56: 'ctrl',
+    57: 'win',
+    58: 'alt',
+    59: '&nbsp',
+    60: 'alt',
+    61: 'ctrl',
     62: '⇐',
     63: '⇓',
     64: '⇒'
@@ -81,8 +80,8 @@ let russianBoardShifted = {
     10: ')',
     11: '_',
     12: '+',
-    13: 'Backspace',
-    14: 'Tab',
+    13: 'backspace',
+    14: 'tab',
     15: 'й',
     16: 'ц',
     17: 'у',
@@ -96,8 +95,8 @@ let russianBoardShifted = {
     25: 'х',
     26: 'ъ',
     27: '/',
-    28: 'Del',
-    29: 'Caps Lock',
+    28: 'del',
+    29: 'caps lock',
     30: 'ф',
     31: 'ы',
     32: 'в',
@@ -109,8 +108,8 @@ let russianBoardShifted = {
     38: 'д',
     39: 'ж',
     40: 'э',
-    41: 'Enter',
-    42: 'Shift',
+    41: 'enter',
+    42: 'shift',
     43: '/',
     44: 'я',
     45: 'ч',
@@ -123,13 +122,13 @@ let russianBoardShifted = {
     52: 'ю',
     53: '.',
     54: '⇑',
-    55: 'Shift',
-    56: 'Ctrl',
-    57: 'Win',
-    58: 'Alt',
-    59: '',
-    60: 'Alt',
-    61: 'Ctrl',
+    55: 'shift',
+    56: 'ctrl',
+    57: 'win',
+    58: 'alt',
+    59: '&nbsp',
+    60: 'alt',
+    61: 'ctrl',
     62: '⇐',
     63: '⇓',
     64: '⇒'
@@ -149,8 +148,8 @@ let englishBoard = {
     10: '0',
     11: '-',
     12: '=',
-    13: 'Backspace',
-    14: 'Tab',
+    13: 'backspace',
+    14: 'tab',
     15: 'q',
     16: 'w',
     17: 'e',
@@ -164,8 +163,8 @@ let englishBoard = {
     25: '[',
     26: ']',
     27: '\\',
-    28: 'Del',
-    29: 'Caps Lock',
+    28: 'del',
+    29: 'caps lock',
     30: 'a',
     31: 's',
     32: 'd',
@@ -177,8 +176,8 @@ let englishBoard = {
     38: 'l',
     39: ';',
     40: '\'',
-    41: 'Enter',
-    42: 'Shift',
+    41: 'enter',
+    42: 'shift',
     43: '\\',
     44: 'z',
     45: 'x',
@@ -191,13 +190,13 @@ let englishBoard = {
     52: ',',
     53: '/',
     54: '⇑',
-    55: 'Shift',
-    56: 'Ctrl',
-    57: 'Win',
-    58: 'Alt',
-    59: '',
-    60: 'Alt',
-    61: 'Ctrl',
+    55: 'shift',
+    56: 'ctrl',
+    57: 'win',
+    58: 'alt',
+    59: '&nbsp',
+    60: 'alt',
+    61: 'ctrl',
     62: '⇐',
     63: '⇓',
     64: '⇒'
@@ -217,8 +216,8 @@ let englishBoardShifted = {
     10: ')',
     11: '_',
     12: '+',
-    13: 'Backspace',
-    14: 'Tab',
+    13: 'backspace',
+    14: 'tab',
     15: 'q',
     16: 'w',
     17: 'e',
@@ -232,8 +231,8 @@ let englishBoardShifted = {
     25: '{',
     26: '}',
     27: '|',
-    28: 'Del',
-    29: 'Caps Lock',
+    28: 'del',
+    29: 'caps lock',
     30: 'a',
     31: 's',
     32: 'd',
@@ -245,8 +244,8 @@ let englishBoardShifted = {
     38: 'l',
     39: ':',
     40: '"',
-    41: 'Enter',
-    42: 'Shift',
+    41: 'enter',
+    42: 'shift',
     43: '\\',
     44: 'z',
     45: 'x',
@@ -259,16 +258,84 @@ let englishBoardShifted = {
     52: '>',
     53: '?',
     54: '⇑',
-    55: 'Shift',
-    56: 'Ctrl',
-    57: 'Win',
-    58: 'Alt',
-    59: '',
-    60: 'Alt',
-    61: 'Ctrl',
+    55: 'shift',
+    56: 'ctrl',
+    57: 'win',
+    58: 'alt',
+    59: '&nbsp',
+    60: 'alt',
+    61: 'ctrl',
     62: '⇐',
     63: '⇓',
     64: '⇒'
+};
+
+let keyCodes = {
+    0: '192',
+    1: '49',
+    2: '50',
+    3: '51',
+    4: '52',
+    5: '53',
+    6: '54',
+    7: '55',
+    8: '56',
+    9: '57',
+    10: '48',
+    11: '189',
+    12: '187',
+    13: '8',
+    14: '9',
+    15: '81',
+    16: '87',
+    17: '69',
+    18: '82',
+    19: '84',
+    20: '89',
+    21: '85',
+    22: '73',
+    23: '79',
+    24: '80',
+    25: '219',
+    26: '221',
+    27: '220',
+    28: '46',
+    29: '20',
+    30: '65',
+    31: '83',
+    32: '68',
+    33: '70',
+    34: '71',
+    35: '72',
+    36: '74',
+    37: '75',
+    38: '76',
+    39: '186',
+    40: '222',
+    41: '13',
+    42: '16',
+    43: '220',
+    44: '90',
+    45: '88',
+    46: '67',
+    47: '86',
+    48: '66',
+    49: '78',
+    50: '77',
+    51: '188',
+    52: '190',
+    53: '191',
+    54: '38',
+    55: '16',
+    56: '17',
+    57: '91',
+    58: '18',
+    59: '32',
+    60: '18',
+    61: '17',
+    62: '37',
+    63: '40',
+    64: '39'
 };
 
 
@@ -283,7 +350,7 @@ keysWrapper.classList.add('keys-wrapper');
 
 const changeLanguage = document.createElement('div');
 document.querySelector('body').appendChild(changeLanguage);
-changeLanguage.innerHTML = 'Please, select keyboard layout language below. OS Windows 10.';
+changeLanguage.innerHTML = 'Please, select keyboard layout language. OS Windows 10.';
 changeLanguage.classList.add('change-language');
 
 for (let i = 65; i > 0; i--) {
@@ -298,8 +365,8 @@ const englishButton = document.createElement('div');
 document.querySelector('body').appendChild(russianButton);
 document.querySelector('body').appendChild(englishButton);
 
-russianButton.classList.add('evaluation-button','inner-text');
-englishButton.classList.add('evaluation-button','inner-text');
+russianButton.classList.add('evaluation-button-rus','inner-text');
+englishButton.classList.add('evaluation-button-en','inner-text');
   
 russianButton.innerHTML = 'Russian';
 englishButton.innerHTML = 'English';
@@ -347,7 +414,7 @@ document.addEventListener('keydown', function(event) {
         buttons.forEach( (e, i = 1) => {
             e.innerHTML = russianBoardShifted[i];
         });
-    } else {
+    } else if (event.keyCode == 16 && englishButton.classList.contains('selected')) {
         const buttons = document.querySelectorAll('.keys');
 
         buttons.forEach( e => {
@@ -371,7 +438,7 @@ document.addEventListener('keyup', function(event) {
         buttons.forEach( (e, i = 1) => {
             e.innerHTML = russianBoard[i];
         });
-    } else {
+    } else if (event.keyCode == 16 && englishButton.classList.contains('selected')) {
         const buttons = document.querySelectorAll('.keys');
 
         buttons.forEach( e => {
@@ -384,114 +451,89 @@ document.addEventListener('keyup', function(event) {
     }
 });
 
+document.addEventListener('keydown', (event, positionCode = []) => {
+
+    for (let code in keyCodes) {
+        if (event.keyCode == keyCodes[code]) { positionCode.push(code); }
+    }
+
+    for (let i = 0; i < positionCode.length; i++) {    
+        const buttons = document.querySelectorAll('.keys');
+
+        buttons.forEach( e => {
+            let innerText = e.innerText;
+
+            if (russianButton.classList.contains('selected')) {
+                if (innerText.toLowerCase() == russianBoard[positionCode[i]] || innerText.toLowerCase() == russianBoardShifted[positionCode[i]]) {
+                e.classList.add('highlight');
+            }
+            }
+
+            if (englishButton.classList.contains('selected')) {
+                if (innerText.toLowerCase() == englishBoard[positionCode[i]] || innerText.toLowerCase() == englishBoardShifted[positionCode[i]]) {
+                e.classList.add('highlight');
+            }
+            }
+
+
+
+        });
+    }
+});
+
+document.addEventListener('keyup', (event, positionCode = []) => {
+
+    for (let code in keyCodes) {
+        if (event.keyCode == keyCodes[code]) { positionCode.push(code); }
+    }
+
+    for (let i = 0; i < positionCode.length; i++) {    
+        const buttons = document.querySelectorAll('.keys');
+
+        buttons.forEach( e => {
+            let innerText = e.innerText;
+
+            if (russianButton.classList.contains('selected')) {
+                if (innerText.toLowerCase() == russianBoard[positionCode[i]] || innerText.toLowerCase() == russianBoardShifted[positionCode[i]]) {
+                e.classList.remove('highlight');
+            }
+            }
+
+            if (englishButton.classList.contains('selected')) {
+                if (innerText.toLowerCase() == englishBoard[positionCode[i]] || innerText.toLowerCase() == englishBoardShifted[positionCode[i]]) {
+                e.classList.remove('highlight');
+            }
+            }
+        });
+    }
+});
+
+const buttons = document.querySelectorAll('.keys');
+    buttons.forEach( e => {
+        e.addEventListener('click', () => {
+            inputField.value += e.innerText;
+        });
+});
+
+
+if (!russianButton.classList.contains('selected') || !englishButton.classList.contains('selected')) {
+    inputField.setAttribute('disabled', 'true');
+} else if (russianButton.classList.contains('selected') || englishButton.classList.contains('selected')) {
+    inputField.removeAttribute('disabled');
+    inputField.focus();
+}
+
+document.addEventListener('click', () => {
+    if (russianButton.classList.contains('selected') || englishButton.classList.contains('selected')) {
+        inputField.removeAttribute('disabled');
+        inputField.focus();
+    }
+});
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// // key functionality for 1
-
-// const one = document.querySelector('.keys:nth-child(1)');
-// one.innerText = 'ё';
-// one.classList.add('inner-text');
-
-// document.addEventListener('keydown', function(event) {
-
-//     inputField.focus();
-
-//     if (event.key == '`') {
-//         one.innerText = '`';
-//     } else if (event.key == 'ё') {
-//         one.innerText = 'ё';
-//     }
-
-//     if (event.keyCode == 192) { 
-//         one.classList.add('highlight');
-//     }
-
-//     if (event.keyCode == 17 && one.innerText == 'ё') {
-//         one.innerText = '`';
-//     } else if (event.keyCode == 17 && one.innerText == '`') {
-//         one.innerText = 'ё';
-//     }
-
-//     if (event.keyCode == 16) {
-//         if (one.innerText == 'ё') {
-//             one.innerText = 'Ё';
-//         } else if (one.innerText == '`') {
-//             one.innerText = '~';
-//         }        
-//     }
-
-//     one.classList.toggle('caps-lock');
-// });
-
-// document.addEventListener('keyup', function(event) {
-//     if (event.keyCode === 192) {
-//         one.classList.remove('highlight');
-//     }
-//     if (event.keyCode == 16) {
-//         if (one.innerText == 'Ё') {
-//             one.innerText = 'ё';
-//         } else if (one.innerText == '~') {
-//             one.innerText = '`';
-//         }        
-//     }
-// });
-
-// one.addEventListener('click', function(event) {
-//     inputField.focus();
-//     if (one.innerText == 'ё') {
-//         inputField.value += 'ё';
-//     } else if (one.innerText == '`') {
-//         inputField.value += '`';
-//     }
-// });
-
-// // key functionality
-
-
-// // key functionality for leftShift
-
-// const _43 = document.querySelector('.keys:nth-child(43)');
-// _43.innerText = 'Shift';
-// _43.classList.add('inner-text');
-
-// document.addEventListener('keydown', function(event) {
-
-//     inputField.focus();
-
-//     if (event.keyCode == 16) {
-//         _43.classList.add('highlight');
-//     }
-
-    
-// });
-
-
-// // key functionality
+// клики по кнопкам мышкой на виртуальной клавиатуре или нажатие на кнопки физической клавиатуры выводят символы в инпут(textarea), 
+// расположенный на странице над клавиатурой. Нажатие стрелок вниз-вверх-влево-вправо либо выводят соответствующую стрелочку в инпут, 
+// либо реализуют навигацию по инпуту, нажатие на enter должно осуществлять перевод каретки, tab создает горизонтальный отступ,
+//  при нажатии остальных функциональных клавиш в инпут символы не выводятся, backspace удаляет символ стоящий перед курсором, del удаляет символ стоящий после курсора.
