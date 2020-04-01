@@ -5,13 +5,15 @@
     height: 300px;
     resize: none;
     font-size: 24px;
+    border: 5px solid black;
+    border-radius: 10px;
 }
 
 .keys-wrapper {
     display: flex;
     flex-flow: row wrap;
     width: 1350px;
-    height: 450px;
+    height: 550px;
     border: 3px solid black;
     border-radius: 5px;
     position: relative;
@@ -140,15 +142,35 @@
 }
 
 .change-language {
+    bottom: 450px;
+    position: absolute;
+    display: block;
+    width: 250px;
     font-size: 34px;
     color: grey;
     text-align: center;
     margin: 0;
     font-weight: bold;
+    animation: blur 3s ease 0s infinite;
+}
+
+@keyframes blur {
+    50%,
+    90% {
+      filter: blur(0px);
+    }
+    70% {
+      filter: blur(50px);
+    }
+  }
+
+.stop-blur-animation {
+    animation: none;
 }
 
 .inner-text {
-    font-size: 30px;
+    padding-top: 10px;
+    font-size: 26px;
     color: #ffffff;
     text-align: center;
 }
@@ -162,7 +184,7 @@
 }
 
 .evaluation-button {
-    padding-top: 30px;
+    padding-top: 50px;
     cursor: pointer;
     width: 250px;
     height: 100px;
@@ -183,4 +205,5 @@
     width: 1920px;
     height: 100%;
     margin: 20px auto 0 auto;
+    background-color: lightgray;
 }
