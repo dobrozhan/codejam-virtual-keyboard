@@ -356,7 +356,7 @@ changeLanguage.classList.add('change-language');
 for (let i = 65; i > 0; i--) {
     const key = document.createElement('div');
     keysWrapper.appendChild(key);
-    key.classList.add('keys','inner-text');
+    key.classList.add('keys', 'inner-text');
 }
 
 const russianButton = document.createElement('div');
@@ -365,9 +365,9 @@ const englishButton = document.createElement('div');
 document.querySelector('body').appendChild(russianButton);
 document.querySelector('body').appendChild(englishButton);
 
-russianButton.classList.add('evaluation-button-rus','inner-text');
-englishButton.classList.add('evaluation-button-en','inner-text');
-  
+russianButton.classList.add('evaluation-button-rus', 'inner-text');
+englishButton.classList.add('evaluation-button-en', 'inner-text');
+
 russianButton.innerHTML = 'Russian';
 englishButton.innerHTML = 'English';
 
@@ -375,11 +375,9 @@ russianButton.addEventListener('click', () => {
     russianButton.classList.add('selected');
     englishButton.classList.remove('selected');
     const buttons = document.querySelectorAll('.keys');
-
-    buttons.forEach( (e, i = 1) => {
+    buttons.forEach((e, i = 1) => {
         e.innerHTML = russianBoard[i];
     });
-
     changeLanguage.classList.add('stop-blur-animation');
 });
 
@@ -387,41 +385,34 @@ englishButton.addEventListener('click', () => {
     englishButton.classList.add('selected');
     russianButton.classList.remove('selected');
     const buttons = document.querySelectorAll('.keys');
-
-    buttons.forEach( (e, i = 1) => {
+    buttons.forEach((e, i = 1) => {
         e.innerHTML = englishBoard[i];
     });
-
     changeLanguage.classList.add('stop-blur-animation');
 });
 
 document.addEventListener('keydown', function(event) {
     if (event.keyCode == 20) {
         const buttons = document.querySelectorAll('.keys');
-
-        buttons.forEach( e => {
+        buttons.forEach(e => {
             e.classList.toggle('caps-lock');
         });
     }
 
     if (event.keyCode == 16 && russianButton.classList.contains('selected')) {
         const buttons = document.querySelectorAll('.keys');
-
-        buttons.forEach( e => {
+        buttons.forEach(e => {
             e.classList.add('shift');
         });
-        
-        buttons.forEach( (e, i = 1) => {
+        buttons.forEach((e, i = 1) => {
             e.innerHTML = russianBoardShifted[i];
         });
     } else if (event.keyCode == 16 && englishButton.classList.contains('selected')) {
         const buttons = document.querySelectorAll('.keys');
-
-        buttons.forEach( e => {
+        buttons.forEach(e => {
             e.classList.add('shift');
         });
-        
-        buttons.forEach( (e, i = 1) => {
+        buttons.forEach((e, i = 1) => {
             e.innerHTML = englishBoardShifted[i];
         });
     }
@@ -430,22 +421,18 @@ document.addEventListener('keydown', function(event) {
 document.addEventListener('keyup', function(event) {
     if (event.keyCode == 16 && russianButton.classList.contains('selected')) {
         const buttons = document.querySelectorAll('.keys');
-
-        buttons.forEach( e => {
+        buttons.forEach(e => {
             e.classList.remove('shift');
         });
-
-        buttons.forEach( (e, i = 1) => {
+        buttons.forEach((e, i = 1) => {
             e.innerHTML = russianBoard[i];
         });
     } else if (event.keyCode == 16 && englishButton.classList.contains('selected')) {
         const buttons = document.querySelectorAll('.keys');
-
-        buttons.forEach( e => {
+        buttons.forEach(e => {
             e.classList.remove('shift');
         });
-
-        buttons.forEach( (e, i = 1) => {
+        buttons.forEach((e, i = 1) => {
             e.innerHTML = englishBoard[i];
         });
     }
@@ -454,29 +441,25 @@ document.addEventListener('keyup', function(event) {
 document.addEventListener('keydown', (event, positionCode = []) => {
 
     for (let code in keyCodes) {
-        if (event.keyCode == keyCodes[code]) { positionCode.push(code); }
+        if (event.keyCode == keyCodes[code]) {
+            positionCode.push(code);
+        }
     }
 
-    for (let i = 0; i < positionCode.length; i++) {    
+    for (let i = 0; i < positionCode.length; i++) {
         const buttons = document.querySelectorAll('.keys');
-
-        buttons.forEach( e => {
+        buttons.forEach(e => {
             let innerText = e.innerText;
-
             if (russianButton.classList.contains('selected')) {
                 if (innerText.toLowerCase() == russianBoard[positionCode[i]] || innerText.toLowerCase() == russianBoardShifted[positionCode[i]]) {
-                e.classList.add('highlight');
+                    e.classList.add('highlight');
+                }
             }
-            }
-
             if (englishButton.classList.contains('selected')) {
                 if (innerText.toLowerCase() == englishBoard[positionCode[i]] || innerText.toLowerCase() == englishBoardShifted[positionCode[i]]) {
-                e.classList.add('highlight');
+                    e.classList.add('highlight');
+                }
             }
-            }
-
-
-
         });
     }
 });
@@ -484,35 +467,34 @@ document.addEventListener('keydown', (event, positionCode = []) => {
 document.addEventListener('keyup', (event, positionCode = []) => {
 
     for (let code in keyCodes) {
-        if (event.keyCode == keyCodes[code]) { positionCode.push(code); }
+        if (event.keyCode == keyCodes[code]) {
+            positionCode.push(code);
+        }
     }
 
-    for (let i = 0; i < positionCode.length; i++) {    
+    for (let i = 0; i < positionCode.length; i++) {
         const buttons = document.querySelectorAll('.keys');
-
-        buttons.forEach( e => {
+        buttons.forEach(e => {
             let innerText = e.innerText;
-
             if (russianButton.classList.contains('selected')) {
                 if (innerText.toLowerCase() == russianBoard[positionCode[i]] || innerText.toLowerCase() == russianBoardShifted[positionCode[i]]) {
-                e.classList.remove('highlight');
+                    e.classList.remove('highlight');
+                }
             }
-            }
-
             if (englishButton.classList.contains('selected')) {
                 if (innerText.toLowerCase() == englishBoard[positionCode[i]] || innerText.toLowerCase() == englishBoardShifted[positionCode[i]]) {
-                e.classList.remove('highlight');
-            }
+                    e.classList.remove('highlight');
+                }
             }
         });
     }
 });
 
 const buttons = document.querySelectorAll('.keys');
-    buttons.forEach( e => {
-        e.addEventListener('click', () => {
-            inputField.value += e.innerText;
-        });
+buttons.forEach(e => {
+    e.addEventListener('click', () => {
+        inputField.value += e.innerText;
+    });
 });
 
 
@@ -530,6 +512,40 @@ document.addEventListener('click', () => {
     }
 });
 
+russianButton.addEventListener('click', () => {
+    sessionStorage.setItem('language-russian', russianButton.classList.contains('selected'));
+    sessionStorage.setItem('language-english', englishButton.classList.contains('selected'));
+});
+
+englishButton.addEventListener('click', () => {
+    sessionStorage.setItem('language-russian', russianButton.classList.contains('selected'));
+    sessionStorage.setItem('language-english', englishButton.classList.contains('selected'));
+});
+
+if (sessionStorage.getItem('language-russian') == 'null' && sessionStorage.getItem('language-english') == 'null') {
+    englishButton.classList.remove('selected');
+    russianButton.classList.remove('selected');
+} else if (sessionStorage.getItem('language-russian') == 'true' && sessionStorage.getItem('language-english') == 'false') {
+    englishButton.classList.remove('selected');
+    russianButton.classList.add('selected');
+    changeLanguage.classList.add('stop-blur-animation');
+    inputField.removeAttribute('disabled');
+    inputField.focus();
+    const buttons = document.querySelectorAll('.keys');
+    buttons.forEach((e, i = 1) => {
+        e.innerHTML = russianBoard[i];
+    });
+} else if (sessionStorage.getItem('language-russian') == 'false' && sessionStorage.getItem('language-english') == 'true') {
+    englishButton.classList.add('selected');
+    russianButton.classList.remove('selected');
+    changeLanguage.classList.add('stop-blur-animation');
+    inputField.removeAttribute('disabled');
+    inputField.focus();
+    const buttons = document.querySelectorAll('.keys');
+    buttons.forEach((e, i = 1) => {
+        e.innerHTML = englishBoard[i];
+    });
+}
 
 
 
@@ -537,3 +553,9 @@ document.addEventListener('click', () => {
 // расположенный на странице над клавиатурой. Нажатие стрелок вниз-вверх-влево-вправо либо выводят соответствующую стрелочку в инпут, 
 // либо реализуют навигацию по инпуту, нажатие на enter должно осуществлять перевод каретки, tab создает горизонтальный отступ,
 //  при нажатии остальных функциональных клавиш в инпут символы не выводятся, backspace удаляет символ стоящий перед курсором, del удаляет символ стоящий после курсора.
+
+// нажатие на кнопку на физической клавиатуре подсвечивает кнопку на виртуальной(проверять следуюет нажатие цифр, букв, знаков припинания, backspace, del(если она присутствует), 
+// enter, shift, alt, ctrl, tab, caps lock, space, стрелки вниз-вверх-влево-вправо): +10
+
+// виртуальная клавиатура должна уметь переключаться между русской и английской раскладками (сочетание клавиш — на ваше усмотрение), 
+// при этом на кнопках должны отображаться символы выбранного языка:
