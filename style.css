@@ -1,0 +1,148 @@
+.input-field {
+    display: block;
+    margin: 0 auto;
+    width: 1350px;
+    height: 300px;
+    resize: none;
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+.input-field:focus {
+    background: #d1d1d1;
+}
+
+.keys-wrapper {
+    width: 1350px;
+    height: 450px;
+    border: 3px solid black;
+    border-radius: 5px;
+    position: relative;
+    background-color: #888888;
+    margin: 20px auto;
+}
+
+.keys-wrapper > div {
+    display: inline-block;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.keys {
+    width: 80px;
+    height: 80px;
+    background-color: #444444;
+}
+
+.keys:hover {
+    background-color: green;
+}
+
+.keys:active {
+    animation: shake 0.25s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(3px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-5px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(5px, 0, 0);
+    }
+  }
+
+.keys:nth-child(14) {
+    width: 170px;
+    background-color: #000000;
+}
+
+.keys:nth-child(15) {
+    width: 100px;
+    background-color: #000000;
+}
+
+.keys:nth-child(29) {
+    width: 60px;
+    background-color: #000000;
+}
+
+.keys:nth-child(30) {
+    width: 170px;
+    background-color: #000000;
+}
+
+.keys:nth-child(42) {
+    width: 170px;
+    background-color: #000000;
+}
+
+.keys:nth-child(43) {
+    width: 170px;
+    background-color: #000000;
+}
+
+.keys:nth-child(55) {
+    background-color: #000000;
+}
+
+.keys:nth-child(56) {
+    background-color: #000000;
+}
+
+.keys:nth-child(57) {
+    width: 100px;
+    background-color: #000000;
+}
+
+.keys:nth-child(58) {
+    background-color: #000000;
+}
+
+.keys:nth-child(59) {
+    background-color: #000000;
+}
+
+.keys:nth-child(60) {
+    width: 580px;
+}
+
+.keys:nth-child(61) {
+    background-color: #000000;
+}
+
+.keys:nth-child(62) {
+    width: 100px;
+    background-color: #000000;
+}
+
+.keys:nth-child(63) {
+    background-color: #000000;
+}
+
+.keys:nth-child(64) {
+    background-color: #000000;
+}
+
+.keys:nth-child(65) {
+    background-color: #000000;
+}
+
+.change-language {
+    font-size: 34px;
+    color: grey;
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+}
