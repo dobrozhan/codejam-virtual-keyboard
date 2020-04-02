@@ -496,7 +496,7 @@ buttons.forEach(e => {
 e.addEventListener('click', () => {
     if (e.innerText != 'backspace' && e.innerText != 'del' && e.innerText != 'tab' && e.innerText != 'caps lock' && e.innerText != 'enter' &&
     e.innerText != 'shift' && e.innerText != 'ctrl' && e.innerText != 'alt' && e.innerText != 'win' &&
-    e.innerText != '⇑' && e.innerText != '⇐' && e.innerText != '⇓' && e.innerText != '⇒' &&
+    e.innerText != '⇐' && e.innerText != '⇒' &&
     e.innerText != 'BACKSPACE' && e.innerText != 'DEL' && e.innerText != 'TAB' && e.innerText != 'CAPS LOCK' && e.innerText != 'ENTER' &&
     e.innerText != 'SHIFT' && e.innerText != 'CTRL' && e.innerText != 'ALT' && e.innerText != 'WIN') {
     inputField.value += e.innerText;
@@ -720,5 +720,16 @@ document.querySelector('div.keys:nth-child(61)').addEventListener('click', funct
             });
         }
         }
-    });
-    });
+});
+});
+
+document.querySelector('.keys:nth-child(63)').addEventListener('click', function() {
+    inputField.selectionEnd = inputField.selectionStart - 1;
+    if (inputField.selectionStart == 0) {
+        inputField.selectionEnd = 0;
+    }
+});
+
+document.querySelector('.keys:nth-child(65)').addEventListener('click', function() {
+    inputField.selectionStart = inputField.selectionEnd  + 1 ;
+});
