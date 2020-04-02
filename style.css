@@ -8,10 +8,9 @@
     border: 5px solid black;
     border-radius: 10px;
     outline: none;
-
-}
-
-.keys-wrapper {
+  }
+  
+  .keys-wrapper {
     display: flex;
     flex-flow: row wrap;
     width: 1350px;
@@ -21,142 +20,145 @@
     position: relative;
     background-color: #888888;
     margin: 20px auto;
-}
-
-.keys-wrapper > div {
+  }
+  
+  .keys-wrapper>div {
     margin: 5px;
     border-radius: 5px;
-}
-
-.keys {
+  }
+  
+  .keys {
     width: 80px;
     height: 80px;
     background-color: #444444;
-}
-
-.keys:hover {
+  }
+  
+  .keys:hover {
     cursor: pointer;
-}
-
-.keys:active {
-    animation: shake 0.25s cubic-bezier(.36,.07,.19,.97) both;
+  }
+  
+  .keys:active {
+    animation: shake 0.25s cubic-bezier(.36, .07, .19, .97) both;
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
     perspective: 1000px;
   }
   
   @keyframes shake {
-    10%, 90% {
+    10%,
+    90% {
       transform: translate3d(-1px, 0, 0);
     }
-    
-    20%, 80% {
+    20%,
+    80% {
       transform: translate3d(3px, 0, 0);
     }
-  
-    30%, 50%, 70% {
+    30%,
+    50%,
+    70% {
       transform: translate3d(-5px, 0, 0);
     }
-  
-    40%, 60% {
+    40%,
+    60% {
       transform: translate3d(5px, 0, 0);
     }
   }
-.keys:nth-child(14) {
+  
+  .keys:nth-child(14) {
     width: 170px;
     background-color: #000000;
-}
-
-.keys:nth-child(15) {
+  }
+  
+  .keys:nth-child(15) {
     width: 100px;
     background-color: #000000;
-}
-
-.keys:nth-child(29) {
+  }
+  
+  .keys:nth-child(29) {
     width: 60px;
     background-color: #000000;
-}
-
-.keys:nth-child(30) {
+  }
+  
+  .keys:nth-child(30) {
     width: 170px;
     background-color: #000000;
-}
-
-.keys:nth-child(42) {
+  }
+  
+  .keys:nth-child(42) {
     width: 170px;
     background-color: #000000;
-}
-
-.keys:nth-child(43) {
+  }
+  
+  .keys:nth-child(43) {
     width: 170px;
     background-color: #000000;
-}
-
-.keys:nth-child(55) {
+  }
+  
+  .keys:nth-child(55) {
     background-color: #000000;
-}
-
-.keys:nth-child(56) {
+  }
+  
+  .keys:nth-child(56) {
     background-color: #000000;
-}
-
-.keys:nth-child(57) {
+  }
+  
+  .keys:nth-child(57) {
     width: 100px;
     background-color: #000000;
-}
-
-.keys:nth-child(58) {
+  }
+  
+  .keys:nth-child(58) {
     background-color: #000000;
-}
-
-.keys:nth-child(59) {
+  }
+  
+  .keys:nth-child(59) {
     background-color: #000000;
-}
-
-.keys:nth-child(60) {
+  }
+  
+  .keys:nth-child(60) {
     width: 580px;
-}
-
-.keys:nth-child(61) {
+  }
+  
+  .keys:nth-child(61) {
     background-color: #000000;
-}
-
-.keys:nth-child(62) {
+  }
+  
+  .keys:nth-child(62) {
     width: 100px;
     background-color: #000000;
-}
-
-.keys:nth-child(63) {
+  }
+  
+  .keys:nth-child(63) {
     background-color: #000000;
-}
-
-.keys:nth-child(64) {
+  }
+  
+  .keys:nth-child(64) {
     background-color: #000000;
-}
-
-.keys:nth-child(65) {
+  }
+  
+  .keys:nth-child(65) {
     background-color: #000000;
-}
-
-.highlight {
+  }
+  
+  .highlight {
     background-color: chartreuse !important;
-}
-
-.change-language {
+  }
+  
+  .change-language {
     position: absolute;
     display: inline-block;
-    width: 1350px;
-    font-size: 45px;
+    width: 1100px;
+    font-size: 40px;
     color: grey;
     text-align: center;
     margin: 0;
     font-weight: bold;
-    animation: blur 3s ease 0s infinite;
-    left: 18%;
-    top: 12%;
-}
-
-@keyframes blur {
+    animation: blur 6s ease 0s infinite;
+    left: 23%;
+    top: 7%;
+  }
+  
+  @keyframes blur {
     50%,
     90% {
       filter: blur(0px);
@@ -165,28 +167,28 @@
       filter: blur(50px);
     }
   }
-
-.stop-blur-animation {
+  
+  .stop-blur-animation {
     animation: none;
     display: none;
-}
-
-.inner-text {
+  }
+  
+  .inner-text {
     padding-top: 10px;
     font-size: 26px;
     color: #ffffff;
     text-align: center;
-}
-
-.caps-lock {
+  }
+  
+  .caps-lock {
     text-transform: uppercase;
-}
-
-.shift {
+  }
+  
+  .shift {
     text-transform: uppercase;
-}
-
-.evaluation-button-rus {
+  }
+  
+  .evaluation-button-rus {
     display: inline-block;
     cursor: pointer;
     width: 250px;
@@ -198,8 +200,9 @@
     left: -90px;
     top: 480px;
     transform: rotate(90deg);
-}
-.evaluation-button-en {
+  }
+  
+  .evaluation-button-en {
     display: inline-block;
     cursor: pointer;
     width: 250px;
@@ -211,13 +214,13 @@
     left: -90px;
     top: 140px;
     transform: rotate(90deg);
-}
-
-.selected {
+  }
+  
+  .selected {
     background-color: green;
-}
-
-.body {
+  }
+  
+  .body {
     text-align: center;
     user-select: none;
     width: 100vw;
@@ -226,4 +229,4 @@
     background-color: lightgray;
     margin: 20px;
     padding: 20px;
-}
+  }
